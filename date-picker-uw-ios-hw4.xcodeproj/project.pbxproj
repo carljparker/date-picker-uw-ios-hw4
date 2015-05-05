@@ -7,10 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87A0613A1AF85368009874DE /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A061381AF85368009874DE /* MainViewController.m */; };
+		87A0613B1AF85368009874DE /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87A061391AF85368009874DE /* MainViewController.xib */; };
 		87B843E01AF7C3B70005A7B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B843DF1AF7C3B70005A7B7 /* main.m */; };
 		87B843E31AF7C3B70005A7B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B843E21AF7C3B70005A7B7 /* AppDelegate.m */; };
-		87B843E61AF7C3B70005A7B7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B843E51AF7C3B70005A7B7 /* ViewController.m */; };
-		87B843E91AF7C3B70005A7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B843E71AF7C3B70005A7B7 /* Main.storyboard */; };
 		87B843EB1AF7C3B70005A7B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 87B843EA1AF7C3B70005A7B7 /* Images.xcassets */; };
 		87B843EE1AF7C3B80005A7B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B843EC1AF7C3B80005A7B7 /* LaunchScreen.xib */; };
 		87B843FA1AF7C3B80005A7B7 /* date_picker_uw_ios_hw4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B843F91AF7C3B80005A7B7 /* date_picker_uw_ios_hw4Tests.m */; };
@@ -27,14 +27,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87A061371AF85368009874DE /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MainViewController.h; path = "date-picker-uw-ios-hw4/MainViewController.h"; sourceTree = "<group>"; };
+		87A061381AF85368009874DE /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MainViewController.m; path = "date-picker-uw-ios-hw4/MainViewController.m"; sourceTree = "<group>"; };
+		87A061391AF85368009874DE /* MainViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = MainViewController.xib; path = "date-picker-uw-ios-hw4/MainViewController.xib"; sourceTree = "<group>"; };
 		87B843DA1AF7C3B70005A7B7 /* date-picker-uw-ios-hw4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date-picker-uw-ios-hw4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B843DE1AF7C3B70005A7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B843DF1AF7C3B70005A7B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87B843E11AF7C3B70005A7B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		87B843E21AF7C3B70005A7B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		87B843E41AF7C3B70005A7B7 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		87B843E51AF7C3B70005A7B7 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		87B843E81AF7C3B70005A7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		87B843EA1AF7C3B70005A7B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		87B843ED1AF7C3B80005A7B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		87B843F31AF7C3B80005A7B7 /* date-picker-uw-ios-hw4Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "date-picker-uw-ios-hw4Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +63,9 @@
 		87B843D11AF7C3B70005A7B7 = {
 			isa = PBXGroup;
 			children = (
+				87A061371AF85368009874DE /* MainViewController.h */,
+				87A061381AF85368009874DE /* MainViewController.m */,
+				87A061391AF85368009874DE /* MainViewController.xib */,
 				87B843DC1AF7C3B70005A7B7 /* date-picker-uw-ios-hw4 */,
 				87B843F61AF7C3B80005A7B7 /* date-picker-uw-ios-hw4Tests */,
 				87B843DB1AF7C3B70005A7B7 /* Products */,
@@ -83,9 +86,6 @@
 			children = (
 				87B843E11AF7C3B70005A7B7 /* AppDelegate.h */,
 				87B843E21AF7C3B70005A7B7 /* AppDelegate.m */,
-				87B843E41AF7C3B70005A7B7 /* ViewController.h */,
-				87B843E51AF7C3B70005A7B7 /* ViewController.m */,
-				87B843E71AF7C3B70005A7B7 /* Main.storyboard */,
 				87B843EA1AF7C3B70005A7B7 /* Images.xcassets */,
 				87B843EC1AF7C3B80005A7B7 /* LaunchScreen.xib */,
 				87B843DD1AF7C3B70005A7B7 /* Supporting Files */,
@@ -199,8 +199,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B843E91AF7C3B70005A7B7 /* Main.storyboard in Resources */,
 				87B843EE1AF7C3B80005A7B7 /* LaunchScreen.xib in Resources */,
+				87A0613B1AF85368009874DE /* MainViewController.xib in Resources */,
 				87B843EB1AF7C3B70005A7B7 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -219,8 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				87B843E61AF7C3B70005A7B7 /* ViewController.m in Sources */,
 				87B843E31AF7C3B70005A7B7 /* AppDelegate.m in Sources */,
+				87A0613A1AF85368009874DE /* MainViewController.m in Sources */,
 				87B843E01AF7C3B70005A7B7 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -244,14 +244,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		87B843E71AF7C3B70005A7B7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				87B843E81AF7C3B70005A7B7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		87B843EC1AF7C3B80005A7B7 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -418,6 +410,7 @@
 				87B843FF1AF7C3B80005A7B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87B844001AF7C3B80005A7B7 /* Build configuration list for PBXNativeTarget "date-picker-uw-ios-hw4Tests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +419,7 @@
 				87B844021AF7C3B80005A7B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

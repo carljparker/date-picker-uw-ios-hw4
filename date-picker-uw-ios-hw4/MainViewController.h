@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  date-picker-uw-ios-hw4
 //
 //  Created by Parker, Carl (HBO) on 5/4/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController
 
 @end
-
