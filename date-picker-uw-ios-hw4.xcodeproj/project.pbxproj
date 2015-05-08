@@ -15,6 +15,7 @@
 		87B843EE1AF7C3B80005A7B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B843EC1AF7C3B80005A7B7 /* LaunchScreen.xib */; };
 		87B843FA1AF7C3B80005A7B7 /* date_picker_uw_ios_hw4Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B843F91AF7C3B80005A7B7 /* date_picker_uw_ios_hw4Tests.m */; };
 		87DD306F1AFCFDA4004592E8 /* BDayListTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DD306E1AFCFDA4004592E8 /* BDayListTableViewController.m */; };
+		87DD30721AFD0966004592E8 /* AddBDayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87DD30711AFD0966004592E8 /* AddBDayTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		87B843F91AF7C3B80005A7B7 /* date_picker_uw_ios_hw4Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = date_picker_uw_ios_hw4Tests.m; sourceTree = "<group>"; };
 		87DD306D1AFCFDA4004592E8 /* BDayListTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDayListTableViewController.h; sourceTree = "<group>"; };
 		87DD306E1AFCFDA4004592E8 /* BDayListTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDayListTableViewController.m; sourceTree = "<group>"; };
+		87DD30701AFD0966004592E8 /* AddBDayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddBDayTableViewController.h; sourceTree = "<group>"; };
+		87DD30711AFD0966004592E8 /* AddBDayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddBDayTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +92,8 @@
 				87B843E41AF7C3B70005A7B7 /* ViewController.h */,
 				87B843E51AF7C3B70005A7B7 /* ViewController.m */,
 				87B843E71AF7C3B70005A7B7 /* Main.storyboard */,
+				87DD30701AFD0966004592E8 /* AddBDayTableViewController.h */,
+				87DD30711AFD0966004592E8 /* AddBDayTableViewController.m */,
 				87DD306D1AFCFDA4004592E8 /* BDayListTableViewController.h */,
 				87DD306E1AFCFDA4004592E8 /* BDayListTableViewController.m */,
 				87B843EA1AF7C3B70005A7B7 /* Images.xcassets */,
@@ -224,6 +229,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87DD30721AFD0966004592E8 /* AddBDayTableViewController.m in Sources */,
 				87B843E61AF7C3B70005A7B7 /* ViewController.m in Sources */,
 				87B843E31AF7C3B70005A7B7 /* AppDelegate.m in Sources */,
 				87B843E01AF7C3B70005A7B7 /* main.m in Sources */,

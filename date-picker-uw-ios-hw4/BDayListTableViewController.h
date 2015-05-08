@@ -10,4 +10,6 @@
 
 @interface BDayListTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
 
+- (IBAction)unwindToList:(UIStoryboardSegue *)segue;
+
 @end

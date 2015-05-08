@@ -80,8 +80,9 @@
         <!--Add Birthday-->
         <scene sceneID="IU1-bz-d4c">
             <objects>
-                <tableViewController id="9Yy-qY-CrY" sceneMemberID="viewController">
+                <tableViewController id="9Yy-qY-CrY" customClass="AddBDayTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="xJr-jm-ods">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -98,11 +99,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Add Birthday" id="uiE-95-RfX">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="adT-bA-PG6"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="adT-bA-PG6">
+                            <connections>
+                                <segue destination="96a-Vo-dAY" kind="unwind" unwindAction="unwindToList:" id="koi-ob-iOI"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="tS1-Gc-ITs"/>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrW-V6-08x" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="96a-Vo-dAY" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1749" y="1044.75"/>
         </scene>
