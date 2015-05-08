@@ -97,7 +97,10 @@
                             <outlet property="delegate" destination="9Yy-qY-CrY" id="OgI-Sz-yRj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Add Birthday" id="uiE-95-RfX"/>
+                    <navigationItem key="navigationItem" title="Add Birthday" id="uiE-95-RfX">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="adT-bA-PG6"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="tS1-Gc-ITs"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrW-V6-08x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
