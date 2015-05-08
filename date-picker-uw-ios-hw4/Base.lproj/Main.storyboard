@@ -77,7 +77,7 @@
             </objects>
             <point key="canvasLocation" x="993" y="339.75"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Add Birthday-->
         <scene sceneID="IU1-bz-d4c">
             <objects>
                 <tableViewController id="9Yy-qY-CrY" sceneMemberID="viewController">
@@ -97,7 +97,7 @@
                             <outlet property="delegate" destination="9Yy-qY-CrY" id="OgI-Sz-yRj"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="uiE-95-RfX"/>
+                    <navigationItem key="navigationItem" title="Add Birthday" id="uiE-95-RfX"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PrW-V6-08x" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
