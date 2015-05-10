@@ -111,12 +111,36 @@
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bWI-IH-cdc" id="ODS-jY-5Qp">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Birthday" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RaQ-SP-Xm4">
+                                                    <rect key="frame" x="8" y="11" width="65" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="RaQ-SP-Xm4" firstAttribute="leading" secondItem="ODS-jY-5Qp" secondAttribute="leadingMargin" id="5iE-Ga-QNC"/>
+                                                <constraint firstItem="RaQ-SP-Xm4" firstAttribute="top" secondItem="ODS-jY-5Qp" secondAttribute="topMargin" constant="3" id="JgP-SJ-pTs"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="zXQ-xM-M12">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="160" id="zXQ-xM-M12">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zXQ-xM-M12" id="hvO-zh-wPu">
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eAZ-lA-983">
+                                                    <rect key="frame" x="140" y="-1" width="320" height="162"/>
+                                                    <date key="date" timeIntervalSinceReferenceDate="452930030.24806201">
+                                                        <!--2015-05-10 05:53:50 +0000-->
+                                                    </date>
+                                                </datePicker>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="centerX" secondItem="eAZ-lA-983" secondAttribute="centerX" id="9hI-b3-Z8A"/>
+                                                <constraint firstAttribute="centerY" secondItem="eAZ-lA-983" secondAttribute="centerY" constant="-0.5" id="oGd-B7-1my"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>
