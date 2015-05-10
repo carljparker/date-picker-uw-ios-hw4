@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="W0E-bZ-tY4">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Birthdays-->
@@ -82,6 +83,7 @@
             <objects>
                 <tableViewController id="pJi-Yy-gmM" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="EVR-h7-FPX">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
@@ -92,51 +94,17 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="g4m-ei-Qsh" id="f0E-f2-wJ1">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goodbye" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iGy-uc-8nJ">
-                                                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="width" constant="77" id="COK-1y-Otb"/>
-                                                    </constraints>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4QG-c4-CQg">
+                                                    <rect key="frame" x="8" y="11" width="46" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
-                                                    <variation key="default">
-                                                        <mask key="constraints">
-                                                            <exclude reference="COK-1y-Otb"/>
-                                                        </mask>
-                                                    </variation>
-                                                    <variation key="heightClass=regular-widthClass=regular">
-                                                        <mask key="constraints">
-                                                            <include reference="COK-1y-Otb"/>
-                                                        </mask>
-                                                    </variation>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="centerX" secondItem="iGy-uc-8nJ" secondAttribute="centerX" constant="-0.5" id="QJJ-Sc-d6M"/>
-                                                <constraint firstItem="iGy-uc-8nJ" firstAttribute="centerY" secondItem="f0E-f2-wJ1" secondAttribute="centerY" id="YeP-Vd-wSN"/>
-                                                <constraint firstAttribute="centerX" secondItem="iGy-uc-8nJ" secondAttribute="centerX" constant="-0.5" id="t1l-D6-4Qn"/>
+                                                <constraint firstItem="4QG-c4-CQg" firstAttribute="top" secondItem="f0E-f2-wJ1" secondAttribute="topMargin" constant="3" id="2yi-Ct-IuC"/>
+                                                <constraint firstItem="4QG-c4-CQg" firstAttribute="leading" secondItem="f0E-f2-wJ1" secondAttribute="leadingMargin" id="HLx-cr-EZ8"/>
                                             </constraints>
-                                            <variation key="default">
-                                                <mask key="subviews">
-                                                    <exclude reference="iGy-uc-8nJ"/>
-                                                </mask>
-                                                <mask key="constraints">
-                                                    <exclude reference="QJJ-Sc-d6M"/>
-                                                    <exclude reference="YeP-Vd-wSN"/>
-                                                    <exclude reference="t1l-D6-4Qn"/>
-                                                </mask>
-                                            </variation>
-                                            <variation key="heightClass=regular-widthClass=regular">
-                                                <mask key="subviews">
-                                                    <include reference="iGy-uc-8nJ"/>
-                                                </mask>
-                                                <mask key="constraints">
-                                                    <include reference="QJJ-Sc-d6M"/>
-                                                    <include reference="YeP-Vd-wSN"/>
-                                                    <include reference="t1l-D6-4Qn"/>
-                                                </mask>
-                                            </variation>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="bWI-IH-cdc">
@@ -163,7 +131,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLN-Bm-mss" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1142.25" y="1039.5"/>
+            <point key="canvasLocation" x="1142" y="1039"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Awj-mN-w8R">
