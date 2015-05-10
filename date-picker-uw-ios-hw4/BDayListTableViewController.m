@@ -6,19 +6,25 @@
 //  Copyright (c) 2015 Parker, Carl (HBO). All rights reserved.
 //
 
+
 #import "BDayListTableViewController.h"
 #import "BDayTableViewCell.h"
 
+
 static NSString *bDayListCellID = @"bDayListCell";
 static NSString *bDayCustomCellID = @"bDayCustomCell";
+
 
 @interface BDayListTableViewController ()
 
 @end
 
+
 @implementation BDayListTableViewController
 
+
 - (void)viewDidLoad {
+
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -29,41 +35,49 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
 }
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
+
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
 
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     
     // Return the number of sections.
     return 1;
 
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
     return 2;
-
+    
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:bDayListCellID forIndexPath:indexPath];
+//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:bDayListCellID forIndexPath:indexPath];
     
     // Configure the cell...
     
-    cell.textLabel.text = @"Hello";
+//    cell.textLabel.text = @"Hello";
+
+    BDayTableViewCell *bDayCell = [tableView dequeueReusableCellWithIdentifier:bDayCustomCellID forIndexPath:indexPath];
     
-    return cell;
+    bDayCell.nameLabel.text = @"Goodbye";
+    
+    return bDayCell;
+    
 }
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue; {
