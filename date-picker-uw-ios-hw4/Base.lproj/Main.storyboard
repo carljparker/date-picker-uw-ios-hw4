@@ -94,6 +94,11 @@
                                         <constraint firstAttribute="centerY" secondItem="bs3-Wi-UKb" secondAttribute="centerY" constant="-0.5" id="vmx-qu-NGz"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="bDayLabel" destination="cSi-cY-OzA" id="hd6-1C-lw0"/>
+                                    <outlet property="daysUntilLabel" destination="bs3-Wi-UKb" id="8me-Yt-5uB"/>
+                                    <outlet property="nameLabel" destination="v5O-js-0JJ" id="hYb-aW-zdW"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
