@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		87AEF4D71AFFA83300411E16 /* BDayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AEF4D61AFFA83300411E16 /* BDayTableViewCell.m */; };
 		87B843E01AF7C3B70005A7B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B843DF1AF7C3B70005A7B7 /* main.m */; };
 		87B843E31AF7C3B70005A7B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B843E21AF7C3B70005A7B7 /* AppDelegate.m */; };
 		87B843E91AF7C3B70005A7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B843E71AF7C3B70005A7B7 /* Main.storyboard */; };
@@ -27,6 +28,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		87AEF4D51AFFA83300411E16 /* BDayTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDayTableViewCell.h; sourceTree = "<group>"; };
+		87AEF4D61AFFA83300411E16 /* BDayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDayTableViewCell.m; sourceTree = "<group>"; };
 		87B843DA1AF7C3B70005A7B7 /* date-picker-uw-ios-hw4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date-picker-uw-ios-hw4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B843DE1AF7C3B70005A7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B843DF1AF7C3B70005A7B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -86,6 +89,8 @@
 				87B843E71AF7C3B70005A7B7 /* Main.storyboard */,
 				87DD306D1AFCFDA4004592E8 /* BDayListTableViewController.h */,
 				87DD306E1AFCFDA4004592E8 /* BDayListTableViewController.m */,
+				87AEF4D51AFFA83300411E16 /* BDayTableViewCell.h */,
+				87AEF4D61AFFA83300411E16 /* BDayTableViewCell.m */,
 				87B843EA1AF7C3B70005A7B7 /* Images.xcassets */,
 				87B843EC1AF7C3B80005A7B7 /* LaunchScreen.xib */,
 				87B843DD1AF7C3B70005A7B7 /* Supporting Files */,
@@ -220,6 +225,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				87B843E31AF7C3B70005A7B7 /* AppDelegate.m in Sources */,
+				87AEF4D71AFFA83300411E16 /* BDayTableViewCell.m in Sources */,
 				87B843E01AF7C3B70005A7B7 /* main.m in Sources */,
 				87DD306F1AFCFDA4004592E8 /* BDayListTableViewController.m in Sources */,
 			);

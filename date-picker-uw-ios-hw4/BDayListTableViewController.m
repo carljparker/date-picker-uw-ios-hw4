@@ -7,8 +7,10 @@
 //
 
 #import "BDayListTableViewController.h"
+#import "BDayTableViewCell.h"
 
 static NSString *bDayListCellID = @"bDayListCell";
+static NSString *bDayCustomCellID = @"bDayCustomCell";
 
 @interface BDayListTableViewController ()
 
