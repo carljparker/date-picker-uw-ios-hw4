@@ -66,12 +66,6 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:bDayListCellID forIndexPath:indexPath];
-    
-    // Configure the cell...
-    
-//    cell.textLabel.text = @"Hello";
-
     BDayTableViewCell *bDayCell = [tableView dequeueReusableCellWithIdentifier:bDayCustomCellID forIndexPath:indexPath];
     
     bDayCell.nameLabel.text = @"Goodbye";
