@@ -100,10 +100,18 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="260" placeholderIntrinsicHeight="21" text="nameValue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56U-wj-PEz">
+                                                    <rect key="frame" x="315" y="11" width="260" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4QG-c4-CQg" firstAttribute="top" secondItem="f0E-f2-wJ1" secondAttribute="topMargin" constant="3" id="2yi-Ct-IuC"/>
                                                 <constraint firstItem="4QG-c4-CQg" firstAttribute="leading" secondItem="f0E-f2-wJ1" secondAttribute="leadingMargin" id="HLx-cr-EZ8"/>
+                                                <constraint firstItem="56U-wj-PEz" firstAttribute="leading" secondItem="4QG-c4-CQg" secondAttribute="trailing" constant="261" id="und-KR-qDn"/>
+                                                <constraint firstItem="56U-wj-PEz" firstAttribute="top" secondItem="f0E-f2-wJ1" secondAttribute="topMargin" constant="3" id="vd2-NZ-2N9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -118,10 +126,18 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="260" placeholderIntrinsicHeight="21" text="bDayValue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdF-nt-EGY">
+                                                    <rect key="frame" x="316" y="11" width="260" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RaQ-SP-Xm4" firstAttribute="leading" secondItem="ODS-jY-5Qp" secondAttribute="leadingMargin" id="5iE-Ga-QNC"/>
+                                                <constraint firstItem="pdF-nt-EGY" firstAttribute="leading" secondItem="RaQ-SP-Xm4" secondAttribute="trailing" constant="243" id="FsM-An-TBU"/>
                                                 <constraint firstItem="RaQ-SP-Xm4" firstAttribute="top" secondItem="ODS-jY-5Qp" secondAttribute="topMargin" constant="3" id="JgP-SJ-pTs"/>
+                                                <constraint firstItem="pdF-nt-EGY" firstAttribute="top" secondItem="ODS-jY-5Qp" secondAttribute="topMargin" constant="3" id="jmY-7t-gC3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -130,7 +146,7 @@
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="zXQ-xM-M12" id="hvO-zh-wPu">
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eAZ-lA-983">
+                                                <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="eAZ-lA-983">
                                                     <rect key="frame" x="140" y="-1" width="320" height="162"/>
                                                     <date key="date" timeIntervalSinceReferenceDate="452930030.24806201">
                                                         <!--2015-05-10 05:53:50 +0000-->
