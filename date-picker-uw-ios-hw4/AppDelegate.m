@@ -18,22 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     
-    NSDateComponents *components = [[NSDateComponents alloc] init];
     
-    [components setWeekday:2]; // Monday
-    
-    [components setWeekdayOrdinal:1]; // The first Monday in the month
-    
-    [components setMonth:5]; // May
-    
-    [components setYear:2008];
-    
-    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    
-    NSDate *date = [gregorian dateFromComponents:components];
-    
-    NSLog( @"DATE: %@", date );
-
     return YES;
 }
 

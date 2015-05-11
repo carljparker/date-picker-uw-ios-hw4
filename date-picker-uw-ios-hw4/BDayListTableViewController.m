@@ -9,6 +9,7 @@
 
 #import "BDayListTableViewController.h"
 #import "BDayTableViewCell.h"
+#import "BDayPerson.h";
 
 
 static NSString *bDayListCellID = @"bDayListCell";
