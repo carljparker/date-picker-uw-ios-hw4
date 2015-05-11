@@ -161,7 +161,14 @@
                             <outlet property="delegate" destination="pJi-Yy-gmM" id="gP9-ZN-nZx"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="jHY-IO-Jo6"/>
+                    <toolbarItems>
+                        <barButtonItem title="Item" id="eDc-JQ-MFX"/>
+                    </toolbarItems>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="jHY-IO-Jo6">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ICz-nS-Eme"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3t6-8c-QfN"/>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLN-Bm-mss" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
