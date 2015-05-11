@@ -94,7 +94,7 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EGs-NJ-Pat">
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EGs-NJ-Pat">
                                                     <rect key="frame" x="311" y="7" width="97" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
@@ -103,6 +103,9 @@
                                             <constraints>
                                                 <constraint firstItem="4QG-c4-CQg" firstAttribute="top" secondItem="f0E-f2-wJ1" secondAttribute="topMargin" constant="3" id="2yi-Ct-IuC"/>
                                                 <constraint firstItem="4QG-c4-CQg" firstAttribute="leading" secondItem="f0E-f2-wJ1" secondAttribute="leadingMargin" id="HLx-cr-EZ8"/>
+                                                <constraint firstAttribute="centerY" secondItem="EGs-NJ-Pat" secondAttribute="centerY" constant="-0.5" id="L8U-jV-ROO"/>
+                                                <constraint firstAttribute="centerX" secondItem="EGs-NJ-Pat" secondAttribute="centerX" constant="-59.5" id="ozP-5c-Qnj"/>
+                                                <constraint firstItem="EGs-NJ-Pat" firstAttribute="leading" secondItem="f0E-f2-wJ1" secondAttribute="leadingMargin" constant="303" id="pg7-hA-MLh"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
