@@ -69,7 +69,9 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
     BDayTableViewCell *bDayCell = [tableView dequeueReusableCellWithIdentifier:bDayCustomCellID forIndexPath:indexPath];
     
-    bDayCell.nameLabel.text = @"Goodbye";
+    BDayPerson *bDP = [[BDayPerson alloc] init];
+    
+    bDayCell.nameLabel.text = bDP.name;
     
     return bDayCell;
     
