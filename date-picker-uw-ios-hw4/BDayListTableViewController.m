@@ -73,6 +73,13 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
     bDayCell.nameLabel.text = bDP.name;
     
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    
+    bDayCell.bDayLabel.text = [dateFormatter stringFromDate:bDP.bDay];
+    
     return bDayCell;
     
 }
