@@ -94,18 +94,15 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="260" placeholderIntrinsicHeight="21" text="nameValue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="56U-wj-PEz">
-                                                    <rect key="frame" x="315" y="11" width="260" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EGs-NJ-Pat">
+                                                    <rect key="frame" x="311" y="7" width="97" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4QG-c4-CQg" firstAttribute="top" secondItem="f0E-f2-wJ1" secondAttribute="topMargin" constant="3" id="2yi-Ct-IuC"/>
                                                 <constraint firstItem="4QG-c4-CQg" firstAttribute="leading" secondItem="f0E-f2-wJ1" secondAttribute="leadingMargin" id="HLx-cr-EZ8"/>
-                                                <constraint firstItem="56U-wj-PEz" firstAttribute="leading" secondItem="4QG-c4-CQg" secondAttribute="trailing" constant="261" id="und-KR-qDn"/>
-                                                <constraint firstItem="56U-wj-PEz" firstAttribute="top" secondItem="f0E-f2-wJ1" secondAttribute="topMargin" constant="3" id="vd2-NZ-2N9"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
