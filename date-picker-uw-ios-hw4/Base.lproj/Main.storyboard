@@ -165,12 +165,17 @@
                         <barButtonItem title="Item" id="eDc-JQ-MFX"/>
                     </toolbarItems>
                     <navigationItem key="navigationItem" title="Root View Controller" id="jHY-IO-Jo6">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ICz-nS-Eme"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ICz-nS-Eme">
+                            <connections>
+                                <segue destination="VSd-T6-KFp" kind="unwind" unwindAction="unwindToList:" id="bZN-7E-L4M"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="3t6-8c-QfN"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLN-Bm-mss" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="VSd-T6-KFp" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1142" y="1039"/>
         </scene>
