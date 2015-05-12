@@ -13,6 +13,9 @@
 -(instancetype) init;
 {
     
+    //
+    // returns mock data
+    //
     self = [super init];
     
     if (self)
@@ -42,8 +45,47 @@
     
 }
 
+
+-(instancetype) initWithName:(NSString *)name
+                        Year:(int)year
+                       Month:(int)month
+                         Day:(int)day;
+{
+    
+    //
+    // returns mock data
+    //
+    self = [super init];
+    
+    if (self)
+    {
+        
+        self.name = name;
+        
+        NSDateComponents *components = [[NSDateComponents alloc] init];
+        
+        [components setYear:year];
+
+        [components setMonth:month];
+        
+        [components setDay:day];
+        
+        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+        
+        self.bDay = [gregorian dateFromComponents:components];
+        
+        NSLog( @"DATE: %@", self.bDay );
+        
+    }
+    
+    return self;
+    
+}
+
+
 - (int) daysUntilBDay; {
     return 40;
 }
+
 
 @end

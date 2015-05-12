@@ -9,7 +9,7 @@
 
 #import "BDayListTableViewController.h"
 #import "BDayTableViewCell.h"
-#import "BDayPerson.h";
+#import "BDayPerson.h"
 
 
 static NSString *bDayListCellID = @"bDayListCell";
@@ -17,6 +17,8 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
 
 
 @interface BDayListTableViewController ()
+
+@property (strong) NSMutableArray *bDaysList;
 
 @end
 
@@ -36,6 +38,12 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    
+    self.bDaysList = [[NSMutableArray alloc] init];
+    
+    [self.bDaysList addObject:[[BDayPerson alloc] initWithName:@"Carl Parker" Year:1962 Month:2 Day:14]];
+    
+    [self.bDaysList addObject:[[BDayPerson alloc] initWithName:@"Nico Nico" Year:1970 Month:5 Day:10]];
     
 }
 
