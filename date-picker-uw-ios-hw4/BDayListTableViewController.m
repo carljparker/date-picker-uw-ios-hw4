@@ -68,7 +68,7 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 
     // Return the number of rows in the section.
-    return 2;
+    return [self.bDaysList count];
     
 }
 
@@ -77,7 +77,7 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
     BDayTableViewCell *bDayCell = [tableView dequeueReusableCellWithIdentifier:bDayCustomCellID forIndexPath:indexPath];
     
-    BDayPerson *bDP = [[BDayPerson alloc] init];
+    BDayPerson *bDP = self.bDaysList[indexPath.row];
     
     bDayCell.nameLabel.text = bDP.name;
     
