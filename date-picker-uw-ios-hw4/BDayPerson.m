@@ -74,15 +74,47 @@
         
         self.bDay = [gregorian dateFromComponents:components];
         
+        //
+        // Some logging code
+        //
         NSUInteger unitFlags = NSCalendarUnitDay;
         NSDateComponents *extracted = [gregorian components:unitFlags fromDate:self.bDay];
-        
         NSLog( @"DATE: %@, %u", self.bDay, [extracted day] );
         
     }
     
     return self;
     
+}
+
+
+- (NSDate *) nextBDay; {
+    
+    NSDate * today = [[NSDate alloc] init];
+    
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    
+    NSUInteger unitMonthDayFlags = NSCalendarUnitMonth | NSCalendarUnitDay;
+
+    NSUInteger unitYearFlags = NSCalendarUnitYear;
+
+    NSDateComponents *extractedFromBDay  = [gregorian components:unitMonthDayFlags fromDate:self.bDay];
+    NSDateComponents *extractedFromToday = [gregorian components:unitYearFlags fromDate:today];
+
+    NSDateComponents *componentsNextBDay = [[NSDateComponents alloc] init];
+    
+    [componentsNextBDay setYear:([extractedFromToday year]+1)];
+    
+    [componentsNextBDay setMonth:[extractedFromBDay month]];
+    
+    [componentsNextBDay setDay:[extractedFromBDay day]];
+
+    NSDate *retNextBDay = [gregorian dateFromComponents:componentsNextBDay];
+    
+    NSLog( @"%@", retNextBDay);
+    
+    return retNextBDay;
+
 }
 
 
@@ -98,7 +130,7 @@
     
     NSDateComponents *components = [gregorian components:unitFlags
                                                 fromDate:today
-                                                  toDate:self.bDay
+                                                  toDate:[self nextBDay]
                                                  options:0];
     
     NSInteger days = [components day];

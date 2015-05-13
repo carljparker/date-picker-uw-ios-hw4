@@ -14,6 +14,8 @@
 
 @property (strong) NSDate   *bDay;
 
+- (NSDate *) nextBDay;
+
 - (int) daysUntilBDay;
 
 -(instancetype) initWithName:(NSString *)name
