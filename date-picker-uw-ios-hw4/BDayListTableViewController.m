@@ -45,6 +45,9 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
     [self.bDaysList addObject:[[BDayPerson alloc] initWithName:@"Nico Nico" Year:1970 Month:5 Day:10]];
     
+    [self.bDaysList addObject:[[BDayPerson alloc] initWithName:@"Nico Vega" Year:2015 Month:8 Day:15]];
+
+    
 }
 
 
