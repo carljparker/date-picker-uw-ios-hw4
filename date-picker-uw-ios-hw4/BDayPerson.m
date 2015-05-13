@@ -84,7 +84,24 @@
 
 
 - (int) daysUntilBDay; {
-    return 40;
+    
+    NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    
+    NSUInteger unitFlags = NSCalendarUnitDay;
+    
+    NSDate *today = [[NSDate alloc] init];
+    
+    NSLog(@"%@", today);
+    
+    NSDateComponents *components = [gregorian components:unitFlags
+                                                fromDate:today
+                                                  toDate:self.bDay
+                                                 options:0];
+    
+    NSInteger days = [components day];
+    
+    return days;
+    
 }
 
 
