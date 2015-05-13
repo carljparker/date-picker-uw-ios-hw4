@@ -74,7 +74,10 @@
         
         self.bDay = [gregorian dateFromComponents:components];
         
-        NSLog( @"DATE: %@", self.bDay );
+        NSUInteger unitFlags = NSCalendarUnitDay;
+        NSDateComponents *extracted = [gregorian components:unitFlags fromDate:self.bDay];
+        
+        NSLog( @"DATE: %@, %u", self.bDay, [extracted day] );
         
     }
     
