@@ -91,7 +91,7 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
     bDayCell.bDayLabel.text = [dateFormatter stringFromDate:bDP.bDay];
     
-    bDayCell.daysUntilLabel.text = [NSString stringWithFormat:@"%u", bDP.daysUntilBDay];
+    bDayCell.daysUntilLabel.text = [NSString stringWithFormat:@"%u", [bDP daysUntilBDay]];
     
     return bDayCell;
     
