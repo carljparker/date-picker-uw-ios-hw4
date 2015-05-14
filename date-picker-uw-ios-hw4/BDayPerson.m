@@ -90,30 +90,39 @@
 
 - (NSDate *) nextBDay; {
     
-    NSDate * today = [[NSDate alloc] init];
-    
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
-    
-    NSUInteger unitMonthDayFlags = NSCalendarUnitMonth | NSCalendarUnitDay;
+
+    NSDate * today = [[NSDate alloc] init];
 
     NSUInteger unitYearFlags = NSCalendarUnitYear;
-
-    NSDateComponents *extractedFromBDay  = [gregorian components:unitMonthDayFlags fromDate:self.bDay];
     NSDateComponents *extractedFromToday = [gregorian components:unitYearFlags fromDate:today];
 
+    NSUInteger unitMonthDayFlags = NSCalendarUnitMonth | NSCalendarUnitDay;
+    NSDateComponents *extractedFromBDay  = [gregorian components:unitMonthDayFlags fromDate:self.bDay];
+
+    //
+    // Create a date that corresponds to
+    // this year's birthday.
+    //
     NSDateComponents *componentsNextBDay = [[NSDateComponents alloc] init];
     
-    [componentsNextBDay setYear:([extractedFromToday year]+1)];
+    [componentsNextBDay setYear:[extractedFromToday year]];
     
     [componentsNextBDay setMonth:[extractedFromBDay month]];
     
     [componentsNextBDay setDay:[extractedFromBDay day]];
 
-    NSDate *retNextBDay = [gregorian dateFromComponents:componentsNextBDay];
+    [componentsNextBDay setYear:([extractedFromToday year]+1)];
     
-    NSLog( @"%@", retNextBDay);
+    NSDate *nextBDay = [gregorian dateFromComponents:componentsNextBDay];
+
+    //
+    // Save it to a local var so
+    // that I can log it.
+    //
+    NSLog( @"%@", nextBDay);
     
-    return retNextBDay;
+    return nextBDay;
 
 }
 
