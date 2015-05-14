@@ -10,13 +10,34 @@
 
 @interface GetBDayTableViewController ()
 
+
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 
 @property (weak, nonatomic) IBOutlet UITextField *dateField;
 
+@property (weak, nonatomic) IBOutlet UIDatePicker *chosenDate;
+
+
 @end
 
+
 @implementation GetBDayTableViewController
+
+
+//
+// Helper method to change a date object
+// to the standard format we're using.
+//
+- (NSString *)textFromDate:(NSDate *)date; {
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    
+    return ( [dateFormatter stringFromDate:date] );
+    
+}
 
 - (void)viewDidLoad {
  
@@ -28,16 +49,17 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    self.nameField.text = @"Nico Nico";
-    
-    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    
-    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
-    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
-    
-    self.dateField.text = [dateFormatter stringFromDate:[[NSDate alloc] init]];
-
 }
+
+
+- (IBAction)pickerValueChanged:(id)sender {
+    
+    NSLog(@"%@", [self textFromDate:self.chosenDate.date]);
+    
+    self.dateField.text = [self textFromDate:self.chosenDate.date];
+    
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

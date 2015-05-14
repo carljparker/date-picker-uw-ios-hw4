@@ -144,6 +144,9 @@
                                                     <date key="date" timeIntervalSinceReferenceDate="452930030.24806201">
                                                         <!--2015-05-10 05:53:50 +0000-->
                                                     </date>
+                                                    <connections>
+                                                        <action selector="pickerValueChanged:" destination="pJi-Yy-gmM" eventType="valueChanged" id="IJk-eP-Mmg"/>
+                                                    </connections>
                                                 </datePicker>
                                             </subviews>
                                             <constraints>
@@ -173,6 +176,7 @@
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
+                        <outlet property="chosenDate" destination="eAZ-lA-983" id="P6j-0Q-eEk"/>
                         <outlet property="dateField" destination="9V6-hV-LvJ" id="UZ1-dn-hG9"/>
                         <outlet property="nameField" destination="EGs-NJ-Pat" id="oqw-EP-4gu"/>
                     </connections>
