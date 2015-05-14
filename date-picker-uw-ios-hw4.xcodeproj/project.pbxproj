@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		87AEF4D71AFFA83300411E16 /* BDayTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AEF4D61AFFA83300411E16 /* BDayTableViewCell.m */; };
 		87AEF4DA1B0144EA00411E16 /* BDayPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AEF4D91B0144EA00411E16 /* BDayPerson.m */; };
+		87AEF4E91B05113000411E16 /* GetBDayTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87AEF4E81B05113000411E16 /* GetBDayTableViewController.m */; };
 		87B843E01AF7C3B70005A7B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B843DF1AF7C3B70005A7B7 /* main.m */; };
 		87B843E31AF7C3B70005A7B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87B843E21AF7C3B70005A7B7 /* AppDelegate.m */; };
 		87B843E91AF7C3B70005A7B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 87B843E71AF7C3B70005A7B7 /* Main.storyboard */; };
@@ -33,6 +34,8 @@
 		87AEF4D61AFFA83300411E16 /* BDayTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDayTableViewCell.m; sourceTree = "<group>"; };
 		87AEF4D81B0144EA00411E16 /* BDayPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BDayPerson.h; sourceTree = "<group>"; };
 		87AEF4D91B0144EA00411E16 /* BDayPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BDayPerson.m; sourceTree = "<group>"; };
+		87AEF4E71B05113000411E16 /* GetBDayTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GetBDayTableViewController.h; sourceTree = "<group>"; };
+		87AEF4E81B05113000411E16 /* GetBDayTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GetBDayTableViewController.m; sourceTree = "<group>"; };
 		87B843DA1AF7C3B70005A7B7 /* date-picker-uw-ios-hw4.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "date-picker-uw-ios-hw4.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87B843DE1AF7C3B70005A7B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		87B843DF1AF7C3B70005A7B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -69,6 +72,8 @@
 		87B843D11AF7C3B70005A7B7 = {
 			isa = PBXGroup;
 			children = (
+				87AEF4E71B05113000411E16 /* GetBDayTableViewController.h */,
+				87AEF4E81B05113000411E16 /* GetBDayTableViewController.m */,
 				87B843DC1AF7C3B70005A7B7 /* date-picker-uw-ios-hw4 */,
 				87B843F61AF7C3B80005A7B7 /* date-picker-uw-ios-hw4Tests */,
 				87B843DB1AF7C3B70005A7B7 /* Products */,
@@ -233,6 +238,7 @@
 				87AEF4DA1B0144EA00411E16 /* BDayPerson.m in Sources */,
 				87AEF4D71AFFA83300411E16 /* BDayTableViewCell.m in Sources */,
 				87B843E01AF7C3B70005A7B7 /* main.m in Sources */,
+				87AEF4E91B05113000411E16 /* GetBDayTableViewController.m in Sources */,
 				87DD306F1AFCFDA4004592E8 /* BDayListTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
