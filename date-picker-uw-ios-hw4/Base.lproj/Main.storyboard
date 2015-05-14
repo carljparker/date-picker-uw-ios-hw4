@@ -120,14 +120,16 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Selected" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9V6-hV-LvJ">
-                                                    <rect key="frame" x="311" y="7" width="97" height="30"/>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Selected" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9V6-hV-LvJ">
+                                                    <rect key="frame" x="311" y="7" width="112" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RaQ-SP-Xm4" firstAttribute="leading" secondItem="ODS-jY-5Qp" secondAttribute="leadingMargin" id="5iE-Ga-QNC"/>
+                                                <constraint firstItem="9V6-hV-LvJ" firstAttribute="leading" secondItem="ODS-jY-5Qp" secondAttribute="leadingMargin" constant="303" id="5wr-MR-eVa"/>
+                                                <constraint firstAttribute="centerY" secondItem="9V6-hV-LvJ" secondAttribute="centerY" constant="-0.5" id="CMQ-Dl-MCi"/>
                                                 <constraint firstItem="RaQ-SP-Xm4" firstAttribute="top" secondItem="ODS-jY-5Qp" secondAttribute="topMargin" constant="3" id="JgP-SJ-pTs"/>
                                             </constraints>
                                         </tableViewCellContentView>
@@ -170,6 +172,10 @@
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="3t6-8c-QfN"/>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="dateField" destination="9V6-hV-LvJ" id="UZ1-dn-hG9"/>
+                        <outlet property="nameField" destination="EGs-NJ-Pat" id="oqw-EP-4gu"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cLN-Bm-mss" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="VSd-T6-KFp" userLabel="Exit" sceneMemberID="exit"/>

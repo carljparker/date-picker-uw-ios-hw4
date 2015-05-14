@@ -10,11 +10,16 @@
 
 @interface GetBDayTableViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+
+@property (weak, nonatomic) IBOutlet UITextField *dateField;
+
 @end
 
 @implementation GetBDayTableViewController
 
 - (void)viewDidLoad {
+ 
     [super viewDidLoad];
     
     // Uncomment the following line to preserve selection between presentations.
@@ -22,6 +27,16 @@
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    self.nameField.text = @"Nico Nico";
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    
+    [dateFormatter setLocale:[[NSLocale alloc] initWithLocaleIdentifier:@"en_US"]];
+    [dateFormatter setDateStyle:NSDateFormatterMediumStyle];
+    
+    self.dateField.text = [dateFormatter stringFromDate:[[NSDate alloc] init]];
+
 }
 
 - (void)didReceiveMemoryWarning {
