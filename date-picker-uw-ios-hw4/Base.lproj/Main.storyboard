@@ -172,7 +172,11 @@
                                 <segue destination="VSd-T6-KFp" kind="unwind" unwindAction="unwindToList:" id="bZN-7E-L4M"/>
                             </connections>
                         </barButtonItem>
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3t6-8c-QfN"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="3t6-8c-QfN">
+                            <connections>
+                                <action selector="doneButtonTapped:" destination="pJi-Yy-gmM" id="ZW5-4z-QFj"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
