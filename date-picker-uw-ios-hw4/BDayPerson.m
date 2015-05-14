@@ -93,6 +93,7 @@
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 
     NSDate * today = [[NSDate alloc] init];
+    NSDate * nextBDay;
 
     NSUInteger unitYearFlags = NSCalendarUnitYear;
     NSDateComponents *extractedFromToday = [gregorian components:unitYearFlags fromDate:today];
@@ -112,14 +113,19 @@
     
     [componentsNextBDay setDay:[extractedFromBDay day]];
 
-    [componentsNextBDay setYear:([extractedFromToday year]+1)];
-    
-    NSDate *nextBDay = [gregorian dateFromComponents:componentsNextBDay];
+    nextBDay = [gregorian dateFromComponents:componentsNextBDay];
 
     //
-    // Save it to a local var so
-    // that I can log it.
+    // If this years birthday is behind us
+    // recalculate it to the next calendar year
     //
+    NSLog(@"%f", nextBDay.timeIntervalSinceNow);
+    
+    if (nextBDay.timeIntervalSinceNow < 0) {
+        [componentsNextBDay setYear:([extractedFromToday year]+1)];
+        nextBDay = [gregorian dateFromComponents:componentsNextBDay];
+    }
+    
     NSLog( @"%@", nextBDay);
     
     return nextBDay;
