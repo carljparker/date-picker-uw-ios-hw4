@@ -120,18 +120,15 @@
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" placeholderIntrinsicWidth="260" placeholderIntrinsicHeight="21" text="bDayValue" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pdF-nt-EGY">
-                                                    <rect key="frame" x="316" y="11" width="260" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Selected" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9V6-hV-LvJ">
+                                                    <rect key="frame" x="311" y="7" width="97" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="RaQ-SP-Xm4" firstAttribute="leading" secondItem="ODS-jY-5Qp" secondAttribute="leadingMargin" id="5iE-Ga-QNC"/>
-                                                <constraint firstItem="pdF-nt-EGY" firstAttribute="leading" secondItem="RaQ-SP-Xm4" secondAttribute="trailing" constant="243" id="FsM-An-TBU"/>
                                                 <constraint firstItem="RaQ-SP-Xm4" firstAttribute="top" secondItem="ODS-jY-5Qp" secondAttribute="topMargin" constant="3" id="JgP-SJ-pTs"/>
-                                                <constraint firstItem="pdF-nt-EGY" firstAttribute="top" secondItem="ODS-jY-5Qp" secondAttribute="topMargin" constant="3" id="jmY-7t-gC3"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
