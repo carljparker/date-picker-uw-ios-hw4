@@ -46,6 +46,14 @@
  
     [super viewDidLoad];
     
+    //
+    // Preload fields so that we handle
+    // the case where the user doesn't change
+    // the values but just taps "Done"
+    //
+    self.nameField.text = @"Barack Obama";
+    self.dateField.text = [self textFromDate:self.chosenDate.date];
+    
 }
 
 
