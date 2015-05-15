@@ -7,7 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BDayPerson.h"
+
+@protocol GetBDayTableViewControllerDelegate;
 
 @interface GetBDayTableViewController : UITableViewController
+
+@property (nonatomic, weak) id<GetBDayTableViewControllerDelegate> getBDayDelegate;
+
+@end
+
+
+@protocol GetBDayTableViewControllerDelegate <NSObject>
+@required
+
+- (void) getBDayTableViewController:(GetBDayTableViewController *)getBDayTableViewController
+                 didEnterPersonInfo:(BDayPerson *)person;
 
 @end

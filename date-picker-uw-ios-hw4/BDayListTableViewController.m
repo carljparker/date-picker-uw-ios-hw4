@@ -10,6 +10,7 @@
 #import "BDayListTableViewController.h"
 #import "BDayTableViewCell.h"
 #import "BDayPerson.h"
+#import "GetBDayTableViewController.h"
 
 
 static NSString *bDayListCellID = @"bDayListCell";
@@ -94,6 +95,26 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     bDayCell.daysUntilLabel.text = [NSString stringWithFormat:@"%u", [bDP daysUntilBDay]];
     
     return bDayCell;
+    
+}
+
+- (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    [super prepareForSegue:segue sender:sender];
+    
+    UINavigationController *navigationController = (UINavigationController *)segue.destinationViewController;
+    
+    GetBDayTableViewController *getBDayTableViewController = (GetBDayTableViewController *)navigationController.topViewController;
+    
+    getBDayTableViewController.getBDayDelegate = self;
+    
+}
+
+-(void)getBDayTableViewController:(GetBDayTableViewController *)getBDayTableViewController didEnterPersonInfo:(BDayPerson *)person {
+    
+    NSLog(@"%@", @"About to dismiss Add UX");
+    
+    [self dismissViewControllerAnimated:YES completion:nil];
     
 }
 

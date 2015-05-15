@@ -19,6 +19,9 @@
 - (int) daysUntilBDay;
 
 -(instancetype) initWithName:(NSString *)name
+                        Date:(NSDate *)date;
+
+-(instancetype) initWithName:(NSString *)name
                         Year:(int)year
                        Month:(int)month
                          Day:(int)day;

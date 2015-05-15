@@ -64,6 +64,15 @@
 - (IBAction)doneButtonTapped:(id)sender {
     
     NSLog(@"%@", @"Done Button Tapped");
+    
+    NSLog(@"%@", self.nameField.text);
+    
+    NSLog(@"%@", self.chosenDate.date);
+    
+    BDayPerson *bDayPerson = [[BDayPerson alloc] initWithName:self.nameField.text Date:self.chosenDate.date];
+
+    [self.getBDayDelegate getBDayTableViewController:self didEnterPersonInfo:bDayPerson];
+
 }
 
 

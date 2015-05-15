@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GetBDayTableViewController.h"
 
-@interface BDayListTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate>
+@interface BDayListTableViewController : UITableViewController <UITableViewDataSource, UITableViewDelegate, GetBDayTableViewControllerDelegate>
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue;
 

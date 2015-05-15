@@ -45,6 +45,23 @@
     
 }
 
+-(instancetype) initWithName:(NSString *)name
+                        Date:(NSDate *)date;
+{
+    self = [super init];
+    
+    if (self)
+    {
+        
+        self.name = name;
+        self.bDay = date;
+   
+    }
+    
+    return self;
+    
+}
+
 
 -(instancetype) initWithName:(NSString *)name
                         Year:(int)year
@@ -52,9 +69,6 @@
                          Day:(int)day;
 {
     
-    //
-    // returns mock data
-    //
     self = [super init];
     
     if (self)
