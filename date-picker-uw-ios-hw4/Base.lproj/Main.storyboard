@@ -26,14 +26,14 @@
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5O-js-0JJ">
-                                            <rect key="frame" x="121" y="16" width="51" height="27"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v5O-js-0JJ">
+                                            <rect key="frame" x="121" y="16" width="48" height="22"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="bDay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSi-cY-OzA">
-                                            <rect key="frame" x="121" y="51" width="51" height="27"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="bDay" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cSi-cY-OzA">
+                                            <rect key="frame" x="121" y="61" width="34" height="17"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -95,17 +95,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EGs-NJ-Pat">
-                                                    <rect key="frame" x="311" y="7" width="97" height="30"/>
+                                                    <rect key="frame" x="311" y="7" width="120" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="4QG-c4-CQg" firstAttribute="top" secondItem="f0E-f2-wJ1" secondAttribute="topMargin" constant="3" id="2yi-Ct-IuC"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="EGs-NJ-Pat" secondAttribute="trailing" constant="161" id="DP3-VM-aaf"/>
                                                 <constraint firstItem="4QG-c4-CQg" firstAttribute="leading" secondItem="f0E-f2-wJ1" secondAttribute="leadingMargin" id="HLx-cr-EZ8"/>
+                                                <constraint firstItem="EGs-NJ-Pat" firstAttribute="leading" secondItem="f0E-f2-wJ1" secondAttribute="leadingMargin" constant="303" id="Krs-wh-EJ4"/>
                                                 <constraint firstAttribute="centerY" secondItem="EGs-NJ-Pat" secondAttribute="centerY" constant="-0.5" id="L8U-jV-ROO"/>
-                                                <constraint firstAttribute="centerX" secondItem="EGs-NJ-Pat" secondAttribute="centerX" constant="-59.5" id="ozP-5c-Qnj"/>
-                                                <constraint firstItem="EGs-NJ-Pat" firstAttribute="leading" secondItem="f0E-f2-wJ1" secondAttribute="leadingMargin" constant="303" id="pg7-hA-MLh"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -121,16 +121,17 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Date Selected" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9V6-hV-LvJ">
-                                                    <rect key="frame" x="311" y="7" width="112" height="30"/>
+                                                    <rect key="frame" x="311" y="7" width="120" height="30"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits"/>
                                                 </textField>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="9V6-hV-LvJ" firstAttribute="leading" secondItem="ODS-jY-5Qp" secondAttribute="leadingMargin" constant="303" id="3gL-17-T8U"/>
                                                 <constraint firstItem="RaQ-SP-Xm4" firstAttribute="leading" secondItem="ODS-jY-5Qp" secondAttribute="leadingMargin" id="5iE-Ga-QNC"/>
-                                                <constraint firstItem="9V6-hV-LvJ" firstAttribute="leading" secondItem="ODS-jY-5Qp" secondAttribute="leadingMargin" constant="303" id="5wr-MR-eVa"/>
-                                                <constraint firstAttribute="centerY" secondItem="9V6-hV-LvJ" secondAttribute="centerY" constant="-0.5" id="CMQ-Dl-MCi"/>
                                                 <constraint firstItem="RaQ-SP-Xm4" firstAttribute="top" secondItem="ODS-jY-5Qp" secondAttribute="topMargin" constant="3" id="JgP-SJ-pTs"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="9V6-hV-LvJ" secondAttribute="trailing" constant="161" id="sDd-2U-t22"/>
+                                                <constraint firstAttribute="centerY" secondItem="9V6-hV-LvJ" secondAttribute="centerY" constant="-0.5" id="yMB-R4-ec8"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
