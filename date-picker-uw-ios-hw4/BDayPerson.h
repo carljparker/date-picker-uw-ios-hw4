@@ -18,7 +18,7 @@
 
 - (NSDate *) nextBDay;
 
-- (int) daysUntilBDay;
+- (long) daysUntilBDay;
 
 -(instancetype) initWithName:(NSString *)name
                         Date:(NSDate *)date;

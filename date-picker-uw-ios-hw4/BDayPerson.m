@@ -97,7 +97,7 @@
         //
         NSUInteger unitFlags = NSCalendarUnitDay;
         NSDateComponents *extracted = [gregorian components:unitFlags fromDate:self.bDay];
-        NSLog( @"DATE: %@, %u", self.bDay, [extracted day] );
+        NSLog( @"DATE: %@, %ld", self.bDay, (long)[extracted day] );
         
     }
     
@@ -152,7 +152,7 @@
 }
 
 
-- (int) daysUntilBDay; {
+- (long) daysUntilBDay; {
     
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
@@ -167,7 +167,7 @@
                                                   toDate:[self nextBDay]
                                                  options:0];
     
-    NSInteger days = [components day];
+    long days = [components day];
     
     return days;
     
