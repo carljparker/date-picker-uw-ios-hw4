@@ -114,6 +114,9 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
     NSLog(@"%@", @"About to dismiss Add UX");
     
+    [self.bDaysList addObject:person];
+    [self.tableView reloadData];
+    
     [self dismissViewControllerAnimated:YES completion:nil];
     
 }
