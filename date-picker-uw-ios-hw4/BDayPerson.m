@@ -6,9 +6,12 @@
 //  Copyright (c) 2015 Parker, Carl (HBO). All rights reserved.
 //
 
+
 #import "BDayPerson.h"
 
+
 @implementation BDayPerson
+
 
 -(instancetype) init;
 {
@@ -44,6 +47,7 @@
     return self;
     
 }
+
 
 -(instancetype) initWithName:(NSString *)name
                         Date:(NSDate *)date;
@@ -102,7 +106,8 @@
 }
 
 
-- (NSDate *) nextBDay; {
+- (NSDate *) nextBDay;
+{
     
     NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
 

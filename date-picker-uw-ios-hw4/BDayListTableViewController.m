@@ -42,19 +42,22 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
     self.bDaysList = [[NSMutableArray alloc] init];
     
+    //
+    // Preload table with some starting birthdays
+    //
     [self.bDaysList addObject:[[BDayPerson alloc] initWithName:@"Carl Parker" Year:1962 Month:2 Day:14]];
     
     [self.bDaysList addObject:[[BDayPerson alloc] initWithName:@"Nico Nico" Year:1970 Month:5 Day:10]];
     
     [self.bDaysList addObject:[[BDayPerson alloc] initWithName:@"Nico Vega" Year:2015 Month:8 Day:15]];
-
     
 }
 
 
 - (void)didReceiveMemoryWarning {
+
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+
 }
 
 
@@ -98,6 +101,7 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
 }
 
+
 - (void) prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     
     [super prepareForSegue:segue sender:sender];
@@ -110,6 +114,7 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
 }
 
+
 -(void)getBDayTableViewController:(GetBDayTableViewController *)getBDayTableViewController didEnterPersonInfo:(BDayPerson *)person {
     
     NSLog(@"%@", @"About to dismiss Add UX");
@@ -121,53 +126,16 @@ static NSString *bDayCustomCellID = @"bDayCustomCell";
     
 }
 
+
+//
+// This outlet is called when the Cancel button is tapped to
+// dismisss the add-birthday UX.
+//
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue; {
+    
+    NSLog(@"%@", @"Cancel button dismissal of Add-Birthday UX");
     
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

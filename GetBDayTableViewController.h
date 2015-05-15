@@ -6,10 +6,13 @@
 //  Copyright (c) 2015 Parker, Carl (HBO). All rights reserved.
 //
 
+
 #import <UIKit/UIKit.h>
 #import "BDayPerson.h"
 
+
 @protocol GetBDayTableViewControllerDelegate;
+
 
 @interface GetBDayTableViewController : UITableViewController
 
@@ -19,9 +22,11 @@
 
 
 @protocol GetBDayTableViewControllerDelegate <NSObject>
+
 @required
 
-- (void) getBDayTableViewController:(GetBDayTableViewController *)getBDayTableViewController
-                 didEnterPersonInfo:(BDayPerson *)person;
+- (void)getBDayTableViewController:(GetBDayTableViewController *)getBDayTableViewController
+                didEnterPersonInfo:(BDayPerson *)person;
 
 @end
+
