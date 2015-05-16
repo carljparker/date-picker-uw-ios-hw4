@@ -72,7 +72,7 @@
             </objects>
             <point key="canvasLocation" x="993" y="339"/>
         </scene>
-        <!--Root View Controller-->
+        <!--Add Birthday-->
         <scene sceneID="kZG-o2-8mq">
             <objects>
                 <tableViewController id="pJi-Yy-gmM" customClass="GetBDayTableViewController" sceneMemberID="viewController">
@@ -165,7 +165,7 @@
                     <toolbarItems>
                         <barButtonItem title="Item" id="eDc-JQ-MFX"/>
                     </toolbarItems>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="jHY-IO-Jo6">
+                    <navigationItem key="navigationItem" title="Add Birthday" id="jHY-IO-Jo6">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="ICz-nS-Eme">
                             <connections>
                                 <segue destination="VSd-T6-KFp" kind="unwind" unwindAction="unwindToList:" id="bZN-7E-L4M"/>
